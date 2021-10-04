@@ -53,7 +53,7 @@
         }
         .image_foreground{
             transform: translateZ(2px) scale(0.65);
-            /* transform-origin: top; */
+            transform-origin: center;
         }
 
         .card{
@@ -96,7 +96,57 @@
             bottom: 30%;
             transform: rotate(-20deg);
         }
+        @media screen and (max-width: 700px){
+            .image_background {
+                height: 150%;
+            }
+            .image_background img{
+                height: 100%;
+            }
+            .image_cat{
+                top: 5%;
+                left: -70%;
+                transform: scale(1.5) rotate(-30deg);
+            }
+            .image_middle{
+                transform: translateZ(1px) scale(0.25);
+            }
+            .image_foreground{
+                top: 30%;
+            }
+            .one{
+            left:100%;
+            bottom: -250%;
+            transform: rotate(20deg);
 
+            }
+
+            .two{
+                right: -60%;
+                top: 200%;
+                transform: rotate(60deg);
+            }
+            .three{
+                right: 20%;
+                bottom: -30%;
+                transform: rotate(-40deg);
+            }
+            .four{
+                left: -40%;
+                bottom: 10%;
+                transform: rotate(100deg);
+            }
+            .five{
+                left: -20%;
+                bottom: -200%;
+                transform: rotate(-30deg);
+            }
+            .six{
+                right: 40%;
+                bottom: 30%;
+                transform: rotate(-20deg);
+            }
+        }
         @media screen and (min-width: 1000px){
             .image_middle{
             transform: translateZ(1px) scale(0.8);
